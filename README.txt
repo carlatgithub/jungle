@@ -1,6 +1,5 @@
 
-
-	Concept du site de vente en ligne de livre.
+	Conception du site de vente en ligne de livre.
 
 
 
@@ -30,4 +29,4 @@ Une capture d'ecran du diagramme de classe.
 
 Description_cas_dutilisation_administrateur
 -------------------------------------------
-Les cas d'utilisation pour l'acteur administrateur (a supprimer comme deja integé dans le document princical jungle)
+Les cas d'utilisation pour l'acteur administrateur (a supprimer comme deja integï¿½ dans le document princical jungle)
