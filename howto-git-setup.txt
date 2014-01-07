@@ -1,0 +1,45 @@
+This guide gives you brief guidelines on how to install and use the git version control system.
+
+It assumes you are using a Microsoft Windows PC.
+
+Installation
+------------
+
+	1. Go to http://git-scm.com/
+
+	2. Go to the 'download' area and select 'Windows'
+
+	3. Wait for the download to complete and start the git installation.
+
+
+Workflow
+--------
+
+	1. Start the git bash command line tool
+
+	2. Navigate to a folder where you'll be keeping the source of the Jungle project.
+
+	3. Clone the Jungle repo from github with:
+	   git clone https://github.com/carlatgithub/jungle.git
+
+	4. Make you source code edits
+
+	5. Add all edits to the staging area ready for commit.
+	   git add .
+
+	          (Note the trailing dot)
+
+	6. To actually commit the changes to the repo, do:
+	   git commit -m "my new edits"
+
+	7. Finally share your changes with the team with:
+	   git push
+
+	8. Check using the web interface by navigating on github.com/carlatgithub that your 
+	   changes have been published.
+
+	9. Go to step 4 to add new features.
+
+
+	       
+
