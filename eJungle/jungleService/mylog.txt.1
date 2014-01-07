@@ -1,0 +1,668 @@
+2014-01-06 10:36:06,661 INFO main org.springframework.test.context.TestContextManager - @TestExecutionListeners is not present for class [class fr.afcepf.atod19.ecommerce.jungle.test.TestDao]: using defaults.
+2014-01-06 10:36:06,914 INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [springContext.xml]
+2014-01-06 10:36:07,142 INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [dataSource.xml]
+2014-01-06 10:36:07,189 INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [jpa.xml]
+2014-01-06 10:36:07,314 INFO main org.springframework.context.support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@4424f1a9: startup date [Mon Jan 06 10:36:07 CET 2014]; root of context hierarchy
+2014-01-06 10:36:07,431 INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2014-01-06 10:36:07,541 INFO main org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@8662a8b: defining beans [myDataSource,myEmf,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor#0,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+2014-01-06 10:36:07,612 INFO main org.springframework.jdbc.datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2014-01-06 10:36:07,717 INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'myPersistenceUnit'
+2014-01-06 10:36:07,760 INFO main org.hibernate.cfg.annotations.Version - Hibernate Annotations 3.5.1-Final
+2014-01-06 10:36:07,774 INFO main org.hibernate.cfg.Environment - Hibernate 3.5.1-Final
+2014-01-06 10:36:07,776 INFO main org.hibernate.cfg.Environment - hibernate.properties not found
+2014-01-06 10:36:07,779 INFO main org.hibernate.cfg.Environment - Bytecode provider name : javassist
+2014-01-06 10:36:07,783 INFO main org.hibernate.cfg.Environment - using JDK 1.4 java.sql.Timestamp handling
+2014-01-06 10:36:07,897 INFO main org.hibernate.annotations.common.Version - Hibernate Commons Annotations 3.2.0.Final
+2014-01-06 10:36:07,905 INFO main org.hibernate.ejb.Version - Hibernate EntityManager 3.5.1-Final
+2014-01-06 10:36:07,925 INFO main org.hibernate.ejb.Ejb3Configuration - Processing PersistenceUnitInfo [
+	name: myPersistenceUnit
+	...]
+2014-01-06 10:36:08,136 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.LigneCommande
+2014-01-06 10:36:08,184 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.LigneCommande on table LigneCommande
+2014-01-06 10:36:08,244 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.User
+2014-01-06 10:36:08,244 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.User on table User
+2014-01-06 10:36:08,299 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Categorie
+2014-01-06 10:36:08,300 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Categorie on table Categorie
+2014-01-06 10:36:08,345 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Editeur
+2014-01-06 10:36:08,345 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Editeur on table Editeur
+2014-01-06 10:36:08,348 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Adresse
+2014-01-06 10:36:08,348 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Adresse on table Adresse
+2014-01-06 10:36:08,352 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Auteur
+2014-01-06 10:36:08,353 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Auteur on table Auteur
+2014-01-06 10:36:08,358 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Commande
+2014-01-06 10:36:08,358 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Commande on table Commande
+2014-01-06 10:36:08,362 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Livre
+2014-01-06 10:36:08,362 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Livre on table Livre
+2014-01-06 10:36:08,370 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Client
+2014-01-06 10:36:08,371 WARN main org.hibernate.cfg.AnnotationBinder - Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: fr.afcepf.atod19.ecommerce.jungle.entity.Client
+2014-01-06 10:36:08,384 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.ImageLivre
+2014-01-06 10:36:08,385 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.ImageLivre on table ImageLivre
+2014-01-06 10:36:08,400 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Categorie.livres -> Livre
+2014-01-06 10:36:08,400 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Editeur.livres -> Livre
+2014-01-06 10:36:08,401 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Adresse.clients -> User
+2014-01-06 10:36:08,401 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Adresse.editeurs -> Editeur
+2014-01-06 10:36:08,401 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Commande.lignesCommande -> LigneCommande
+2014-01-06 10:36:08,401 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Livre.imagesLivre -> ImageLivre
+2014-01-06 10:36:08,403 INFO main org.hibernate.cfg.AnnotationConfiguration - Hibernate Validator not found: ignoring
+2014-01-06 10:36:08,441 INFO main org.hibernate.cfg.search.HibernateSearchEventListenerRegister - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2014-01-06 10:36:08,448 INFO main org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@8662a8b: defining beans [myDataSource,myEmf,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor#0,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+2014-01-06 10:36:08,458 ERROR main org.springframework.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@50337ff4] to prepare test instance [fr.afcepf.atod19.ecommerce.jungle.test.TestDao@6515954e]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:157)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:290)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myEmf' defined in class path resource [jpa.xml]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: myPersistenceUnit] Unable to build EntityManagerFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1455)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:591)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:469)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:103)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:228)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)
+	... 24 more
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: myPersistenceUnit] Unable to build EntityManagerFactory
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:892)
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:73)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:268)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:310)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1452)
+	... 38 more
+Caused by: org.hibernate.MappingException: Could not determine type for: java.util.List, at table: User, for columns: [org.hibernate.mapping.Column(commandes)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:290)
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:274)
+	at org.hibernate.mapping.Property.isValid(Property.java:217)
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:464)
+	at org.hibernate.mapping.SingleTableSubclass.validate(SingleTableSubclass.java:66)
+	at org.hibernate.cfg.Configuration.validate(Configuration.java:1193)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1378)
+	at org.hibernate.cfg.AnnotationConfiguration.buildSessionFactory(AnnotationConfiguration.java:954)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:883)
+	... 43 more
+2014-01-06 10:44:48,234 INFO main org.springframework.test.context.TestContextManager - @TestExecutionListeners is not present for class [class fr.afcepf.atod19.ecommerce.jungle.test.TestDao]: using defaults.
+2014-01-06 10:44:48,472 INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [springContext.xml]
+2014-01-06 10:44:48,674 INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [dataSource.xml]
+2014-01-06 10:44:48,742 INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [jpa.xml]
+2014-01-06 10:44:48,861 INFO main org.springframework.context.support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@252b65bf: startup date [Mon Jan 06 10:44:48 CET 2014]; root of context hierarchy
+2014-01-06 10:44:48,984 INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2014-01-06 10:44:49,119 INFO main org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4f1e5ed9: defining beans [myDataSource,myEmf,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor#0,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+2014-01-06 10:44:49,190 INFO main org.springframework.jdbc.datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2014-01-06 10:44:49,261 INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'myPersistenceUnit'
+2014-01-06 10:44:49,304 INFO main org.hibernate.cfg.annotations.Version - Hibernate Annotations 3.5.1-Final
+2014-01-06 10:44:49,318 INFO main org.hibernate.cfg.Environment - Hibernate 3.5.1-Final
+2014-01-06 10:44:49,320 INFO main org.hibernate.cfg.Environment - hibernate.properties not found
+2014-01-06 10:44:49,323 INFO main org.hibernate.cfg.Environment - Bytecode provider name : javassist
+2014-01-06 10:44:49,328 INFO main org.hibernate.cfg.Environment - using JDK 1.4 java.sql.Timestamp handling
+2014-01-06 10:44:49,453 INFO main org.hibernate.annotations.common.Version - Hibernate Commons Annotations 3.2.0.Final
+2014-01-06 10:44:49,461 INFO main org.hibernate.ejb.Version - Hibernate EntityManager 3.5.1-Final
+2014-01-06 10:44:49,480 INFO main org.hibernate.ejb.Ejb3Configuration - Processing PersistenceUnitInfo [
+	name: myPersistenceUnit
+	...]
+2014-01-06 10:44:49,643 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.User
+2014-01-06 10:44:49,683 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.User on table User
+2014-01-06 10:44:49,732 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Client
+2014-01-06 10:44:49,735 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Client on table Client
+2014-01-06 10:44:49,763 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.LigneCommande
+2014-01-06 10:44:49,766 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.LigneCommande on table LigneCommande
+2014-01-06 10:44:49,768 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Livre
+2014-01-06 10:44:49,768 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Livre on table Livre
+2014-01-06 10:44:49,805 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Categorie
+2014-01-06 10:44:49,805 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Categorie on table Categorie
+2014-01-06 10:44:49,808 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Auteur
+2014-01-06 10:44:49,808 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Auteur on table Auteur
+2014-01-06 10:44:49,811 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.ImageLivre
+2014-01-06 10:44:49,812 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.ImageLivre on table ImageLivre
+2014-01-06 10:44:49,815 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Adresse
+2014-01-06 10:44:49,815 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Adresse on table Adresse
+2014-01-06 10:44:49,820 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Commande
+2014-01-06 10:44:49,820 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Commande on table Commande
+2014-01-06 10:44:49,834 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Editeur
+2014-01-06 10:44:49,834 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Editeur on table Editeur
+2014-01-06 10:44:49,902 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Livre.imagesLivre -> ImageLivre
+2014-01-06 10:44:49,902 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Categorie.livres -> Livre
+2014-01-06 10:44:49,903 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Adresse.clients -> Client
+2014-01-06 10:44:49,903 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Adresse.editeurs -> Editeur
+2014-01-06 10:44:49,903 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Commande.lignesCommande -> LigneCommande
+2014-01-06 10:44:49,903 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Editeur.livres -> Livre
+2014-01-06 10:44:49,905 INFO main org.hibernate.cfg.AnnotationConfiguration - Hibernate Validator not found: ignoring
+2014-01-06 10:44:49,940 INFO main org.hibernate.cfg.search.HibernateSearchEventListenerRegister - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2014-01-06 10:44:49,948 INFO main org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4f1e5ed9: defining beans [myDataSource,myEmf,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor#0,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+2014-01-06 10:44:49,958 ERROR main org.springframework.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5bb6815c] to prepare test instance [fr.afcepf.atod19.ecommerce.jungle.test.TestDao@2ae6ee0e]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:157)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:290)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myEmf' defined in class path resource [jpa.xml]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: myPersistenceUnit] Unable to build EntityManagerFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1455)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:591)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:469)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:103)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:228)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)
+	... 24 more
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: myPersistenceUnit] Unable to build EntityManagerFactory
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:892)
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:73)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:268)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:310)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1452)
+	... 38 more
+Caused by: org.hibernate.MappingException: Could not determine type for: java.util.List, at table: Client, for columns: [org.hibernate.mapping.Column(commandes)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:290)
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:274)
+	at org.hibernate.mapping.Property.isValid(Property.java:217)
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:464)
+	at org.hibernate.mapping.JoinedSubclass.validate(JoinedSubclass.java:63)
+	at org.hibernate.cfg.Configuration.validate(Configuration.java:1193)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1378)
+	at org.hibernate.cfg.AnnotationConfiguration.buildSessionFactory(AnnotationConfiguration.java:954)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:883)
+	... 43 more
+2014-01-06 10:50:50,937 INFO main org.springframework.test.context.TestContextManager - @TestExecutionListeners is not present for class [class fr.afcepf.atod19.ecommerce.jungle.test.TestDao]: using defaults.
+2014-01-06 10:50:51,167 INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [springContext.xml]
+2014-01-06 10:50:51,358 INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [dataSource.xml]
+2014-01-06 10:50:51,413 INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [jpa.xml]
+2014-01-06 10:50:51,522 INFO main org.springframework.context.support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@252b65bf: startup date [Mon Jan 06 10:50:51 CET 2014]; root of context hierarchy
+2014-01-06 10:50:51,642 INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2014-01-06 10:50:51,768 INFO main org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@559c4c8e: defining beans [myDataSource,myEmf,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor#0,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+2014-01-06 10:50:51,837 INFO main org.springframework.jdbc.datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2014-01-06 10:50:51,937 INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'myPersistenceUnit'
+2014-01-06 10:50:51,981 INFO main org.hibernate.cfg.annotations.Version - Hibernate Annotations 3.5.1-Final
+2014-01-06 10:50:51,995 INFO main org.hibernate.cfg.Environment - Hibernate 3.5.1-Final
+2014-01-06 10:50:51,997 INFO main org.hibernate.cfg.Environment - hibernate.properties not found
+2014-01-06 10:50:52,001 INFO main org.hibernate.cfg.Environment - Bytecode provider name : javassist
+2014-01-06 10:50:52,005 INFO main org.hibernate.cfg.Environment - using JDK 1.4 java.sql.Timestamp handling
+2014-01-06 10:50:52,120 INFO main org.hibernate.annotations.common.Version - Hibernate Commons Annotations 3.2.0.Final
+2014-01-06 10:50:52,127 INFO main org.hibernate.ejb.Version - Hibernate EntityManager 3.5.1-Final
+2014-01-06 10:50:52,147 INFO main org.hibernate.ejb.Ejb3Configuration - Processing PersistenceUnitInfo [
+	name: myPersistenceUnit
+	...]
+2014-01-06 10:50:52,322 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.User
+2014-01-06 10:50:52,363 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.User on table User
+2014-01-06 10:50:52,416 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Client
+2014-01-06 10:50:52,418 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Client on table Client
+2014-01-06 10:50:52,472 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.ImageLivre
+2014-01-06 10:50:52,475 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.ImageLivre on table ImageLivre
+2014-01-06 10:50:52,477 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Adresse
+2014-01-06 10:50:52,477 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Adresse on table Adresse
+2014-01-06 10:50:52,482 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.LigneCommande
+2014-01-06 10:50:52,482 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.LigneCommande on table LigneCommande
+2014-01-06 10:50:52,484 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Commande
+2014-01-06 10:50:52,484 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Commande on table Commande
+2014-01-06 10:50:52,489 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Editeur
+2014-01-06 10:50:52,489 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Editeur on table Editeur
+2014-01-06 10:50:52,492 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Categorie
+2014-01-06 10:50:52,492 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Categorie on table Categorie
+2014-01-06 10:50:52,495 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Auteur
+2014-01-06 10:50:52,495 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Auteur on table Auteur
+2014-01-06 10:50:52,503 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Livre
+2014-01-06 10:50:52,503 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Livre on table Livre
+2014-01-06 10:50:52,594 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Client.commandes -> Commande
+2014-01-06 10:50:52,594 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Adresse.clients -> Client
+2014-01-06 10:50:52,594 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Adresse.editeurs -> Editeur
+2014-01-06 10:50:52,594 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Commande.lignesCommande -> LigneCommande
+2014-01-06 10:50:52,595 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Editeur.livres -> Livre
+2014-01-06 10:50:52,595 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Categorie.livres -> Livre
+2014-01-06 10:50:52,595 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Livre.imagesLivre -> ImageLivre
+2014-01-06 10:50:52,596 INFO main org.hibernate.cfg.AnnotationConfiguration - Hibernate Validator not found: ignoring
+2014-01-06 10:50:52,633 INFO main org.hibernate.cfg.search.HibernateSearchEventListenerRegister - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2014-01-06 10:50:52,640 INFO main org.hibernate.connection.ConnectionProviderFactory - Initializing connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+2014-01-06 10:50:52,647 INFO main org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider - Using provided datasource
+2014-01-06 10:50:52,938 INFO main org.hibernate.cfg.SettingsFactory - RDBMS: MySQL, version: 5.1.31-community
+2014-01-06 10:50:52,938 INFO main org.hibernate.cfg.SettingsFactory - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.24 ( Revision: ${bzr.revision-id} )
+2014-01-06 10:50:52,966 INFO main org.hibernate.dialect.Dialect - Using dialect: org.hibernate.dialect.MySQLDialect
+2014-01-06 10:50:52,976 INFO main org.hibernate.transaction.TransactionFactoryFactory - Transaction strategy: org.hibernate.transaction.JDBCTransactionFactory
+2014-01-06 10:50:52,978 INFO main org.hibernate.transaction.TransactionManagerLookupFactory - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2014-01-06 10:50:52,978 INFO main org.hibernate.cfg.SettingsFactory - Automatic flush during beforeCompletion(): disabled
+2014-01-06 10:50:52,978 INFO main org.hibernate.cfg.SettingsFactory - Automatic session close at end of transaction: disabled
+2014-01-06 10:50:52,978 INFO main org.hibernate.cfg.SettingsFactory - JDBC batch size: 15
+2014-01-06 10:50:52,978 INFO main org.hibernate.cfg.SettingsFactory - JDBC batch updates for versioned data: disabled
+2014-01-06 10:50:52,979 INFO main org.hibernate.cfg.SettingsFactory - Scrollable result sets: enabled
+2014-01-06 10:50:52,979 INFO main org.hibernate.cfg.SettingsFactory - JDBC3 getGeneratedKeys(): enabled
+2014-01-06 10:50:52,979 INFO main org.hibernate.cfg.SettingsFactory - Connection release mode: auto
+2014-01-06 10:50:52,980 INFO main org.hibernate.cfg.SettingsFactory - Maximum outer join fetch depth: 2
+2014-01-06 10:50:52,980 INFO main org.hibernate.cfg.SettingsFactory - Default batch fetch size: 1
+2014-01-06 10:50:52,980 INFO main org.hibernate.cfg.SettingsFactory - Generate SQL with comments: disabled
+2014-01-06 10:50:52,980 INFO main org.hibernate.cfg.SettingsFactory - Order SQL updates by primary key: disabled
+2014-01-06 10:50:52,980 INFO main org.hibernate.cfg.SettingsFactory - Order SQL inserts for batching: disabled
+2014-01-06 10:50:52,980 INFO main org.hibernate.cfg.SettingsFactory - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2014-01-06 10:50:52,982 INFO main org.hibernate.hql.ast.ASTQueryTranslatorFactory - Using ASTQueryTranslatorFactory
+2014-01-06 10:50:52,982 INFO main org.hibernate.cfg.SettingsFactory - Query language substitutions: {}
+2014-01-06 10:50:52,982 INFO main org.hibernate.cfg.SettingsFactory - JPA-QL strict compliance: enabled
+2014-01-06 10:50:52,982 INFO main org.hibernate.cfg.SettingsFactory - Second-level cache: enabled
+2014-01-06 10:50:52,982 INFO main org.hibernate.cfg.SettingsFactory - Query cache: disabled
+2014-01-06 10:50:52,982 INFO main org.hibernate.cfg.SettingsFactory - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2014-01-06 10:50:52,983 INFO main org.hibernate.cfg.SettingsFactory - Optimize cache for minimal puts: disabled
+2014-01-06 10:50:52,983 INFO main org.hibernate.cfg.SettingsFactory - Structured second-level cache entries: disabled
+2014-01-06 10:50:52,989 INFO main org.hibernate.cfg.SettingsFactory - Statistics: disabled
+2014-01-06 10:50:52,989 INFO main org.hibernate.cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+2014-01-06 10:50:52,989 INFO main org.hibernate.cfg.SettingsFactory - Default entity-mode: pojo
+2014-01-06 10:50:52,989 INFO main org.hibernate.cfg.SettingsFactory - Named query checking : enabled
+2014-01-06 10:50:52,989 INFO main org.hibernate.cfg.SettingsFactory - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2014-01-06 10:50:53,026 INFO main org.hibernate.impl.SessionFactoryImpl - building session factory
+2014-01-06 10:50:53,260 INFO main org.hibernate.impl.SessionFactoryObjectFactory - Not binding factory to JNDI, no JNDI name configured
+2014-01-06 10:50:53,274 INFO main org.hibernate.tool.hbm2ddl.SchemaExport - Running hbm2ddl schema export
+2014-01-06 10:50:53,275 INFO main org.hibernate.tool.hbm2ddl.SchemaExport - exporting generated schema to database
+2014-01-06 10:50:54,450 INFO main org.hibernate.tool.hbm2ddl.SchemaExport - schema export complete
+2014-01-06 10:50:54,612 INFO Thread-0 org.springframework.context.support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@252b65bf: startup date [Mon Jan 06 10:50:51 CET 2014]; root of context hierarchy
+2014-01-06 10:50:54,613 INFO Thread-0 org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@559c4c8e: defining beans [myDataSource,myEmf,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor#0,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+2014-01-06 10:50:54,624 INFO Thread-0 org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'myPersistenceUnit'
+2014-01-06 10:50:54,624 INFO Thread-0 org.hibernate.impl.SessionFactoryImpl - closing
+2014-01-06 13:32:55,741 INFO main org.springframework.test.context.TestContextManager - @TestExecutionListeners is not present for class [class fr.afcepf.atod19.ecommerce.jungle.test.TestDao]: using defaults.
+2014-01-06 13:32:56,078 INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [springContext.xml]
+2014-01-06 13:32:56,319 INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [dataSource.xml]
+2014-01-06 13:32:56,367 INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [jpa.xml]
+2014-01-06 13:32:56,481 INFO main org.springframework.context.support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@4424f1a9: startup date [Mon Jan 06 13:32:56 CET 2014]; root of context hierarchy
+2014-01-06 13:32:56,603 INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2014-01-06 13:32:56,726 INFO main org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6b730ffb: defining beans [myDataSource,myEmf,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor#0,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+2014-01-06 13:32:56,795 INFO main org.springframework.jdbc.datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2014-01-06 13:32:56,866 INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'myPersistenceUnit'
+2014-01-06 13:32:56,909 INFO main org.hibernate.cfg.annotations.Version - Hibernate Annotations 3.5.1-Final
+2014-01-06 13:32:56,923 INFO main org.hibernate.cfg.Environment - Hibernate 3.5.1-Final
+2014-01-06 13:32:56,925 INFO main org.hibernate.cfg.Environment - hibernate.properties not found
+2014-01-06 13:32:56,929 INFO main org.hibernate.cfg.Environment - Bytecode provider name : javassist
+2014-01-06 13:32:56,933 INFO main org.hibernate.cfg.Environment - using JDK 1.4 java.sql.Timestamp handling
+2014-01-06 13:32:57,045 INFO main org.hibernate.annotations.common.Version - Hibernate Commons Annotations 3.2.0.Final
+2014-01-06 13:32:57,055 INFO main org.hibernate.ejb.Version - Hibernate EntityManager 3.5.1-Final
+2014-01-06 13:32:57,074 INFO main org.hibernate.ejb.Ejb3Configuration - Processing PersistenceUnitInfo [
+	name: myPersistenceUnit
+	...]
+2014-01-06 13:32:57,236 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Editeur
+2014-01-06 13:32:57,282 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Editeur on table Editeur
+2014-01-06 13:32:57,371 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.User
+2014-01-06 13:32:57,371 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.User on table User
+2014-01-06 13:32:57,372 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Commande
+2014-01-06 13:32:57,373 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Commande on table Commande
+2014-01-06 13:32:57,384 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Livre
+2014-01-06 13:32:57,384 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Livre on table Livre
+2014-01-06 13:32:57,396 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Auteur
+2014-01-06 13:32:57,397 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Auteur on table Auteur
+2014-01-06 13:32:57,399 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.ImageLivre
+2014-01-06 13:32:57,400 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.ImageLivre on table ImageLivre
+2014-01-06 13:32:57,402 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.LigneCommande
+2014-01-06 13:32:57,402 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.LigneCommande on table LigneCommande
+2014-01-06 13:32:57,404 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Client
+2014-01-06 13:32:57,405 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Client on table Client
+2014-01-06 13:32:57,433 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Adresse
+2014-01-06 13:32:57,433 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Adresse on table Adresse
+2014-01-06 13:32:57,437 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Categorie
+2014-01-06 13:32:57,437 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Categorie on table Categorie
+2014-01-06 13:32:57,504 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Editeur.livres -> Livre
+2014-01-06 13:32:57,504 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Commande.lignesCommande -> LigneCommande
+2014-01-06 13:32:57,504 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Livre.imagesLivre -> ImageLivre
+2014-01-06 13:32:57,505 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Client.commandes -> Commande
+2014-01-06 13:32:57,505 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Adresse.clients -> Client
+2014-01-06 13:32:57,505 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Adresse.editeurs -> Editeur
+2014-01-06 13:32:57,505 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Categorie.livres -> Livre
+2014-01-06 13:32:57,506 INFO main org.hibernate.cfg.AnnotationConfiguration - Hibernate Validator not found: ignoring
+2014-01-06 13:32:57,543 INFO main org.hibernate.cfg.search.HibernateSearchEventListenerRegister - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2014-01-06 13:32:57,553 INFO main org.hibernate.connection.ConnectionProviderFactory - Initializing connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+2014-01-06 13:32:57,559 INFO main org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider - Using provided datasource
+2014-01-06 13:32:58,104 INFO main org.hibernate.cfg.SettingsFactory - RDBMS: MySQL, version: 5.1.31-community
+2014-01-06 13:32:58,104 INFO main org.hibernate.cfg.SettingsFactory - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.24 ( Revision: ${bzr.revision-id} )
+2014-01-06 13:32:58,160 INFO main org.hibernate.dialect.Dialect - Using dialect: org.hibernate.dialect.MySQLDialect
+2014-01-06 13:32:58,170 INFO main org.hibernate.transaction.TransactionFactoryFactory - Transaction strategy: org.hibernate.transaction.JDBCTransactionFactory
+2014-01-06 13:32:58,171 INFO main org.hibernate.transaction.TransactionManagerLookupFactory - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2014-01-06 13:32:58,171 INFO main org.hibernate.cfg.SettingsFactory - Automatic flush during beforeCompletion(): disabled
+2014-01-06 13:32:58,171 INFO main org.hibernate.cfg.SettingsFactory - Automatic session close at end of transaction: disabled
+2014-01-06 13:32:58,171 INFO main org.hibernate.cfg.SettingsFactory - JDBC batch size: 15
+2014-01-06 13:32:58,171 INFO main org.hibernate.cfg.SettingsFactory - JDBC batch updates for versioned data: disabled
+2014-01-06 13:32:58,172 INFO main org.hibernate.cfg.SettingsFactory - Scrollable result sets: enabled
+2014-01-06 13:32:58,172 INFO main org.hibernate.cfg.SettingsFactory - JDBC3 getGeneratedKeys(): enabled
+2014-01-06 13:32:58,172 INFO main org.hibernate.cfg.SettingsFactory - Connection release mode: auto
+2014-01-06 13:32:58,173 INFO main org.hibernate.cfg.SettingsFactory - Maximum outer join fetch depth: 2
+2014-01-06 13:32:58,173 INFO main org.hibernate.cfg.SettingsFactory - Default batch fetch size: 1
+2014-01-06 13:32:58,173 INFO main org.hibernate.cfg.SettingsFactory - Generate SQL with comments: disabled
+2014-01-06 13:32:58,173 INFO main org.hibernate.cfg.SettingsFactory - Order SQL updates by primary key: disabled
+2014-01-06 13:32:58,173 INFO main org.hibernate.cfg.SettingsFactory - Order SQL inserts for batching: disabled
+2014-01-06 13:32:58,173 INFO main org.hibernate.cfg.SettingsFactory - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2014-01-06 13:32:58,176 INFO main org.hibernate.hql.ast.ASTQueryTranslatorFactory - Using ASTQueryTranslatorFactory
+2014-01-06 13:32:58,176 INFO main org.hibernate.cfg.SettingsFactory - Query language substitutions: {}
+2014-01-06 13:32:58,176 INFO main org.hibernate.cfg.SettingsFactory - JPA-QL strict compliance: enabled
+2014-01-06 13:32:58,176 INFO main org.hibernate.cfg.SettingsFactory - Second-level cache: enabled
+2014-01-06 13:32:58,176 INFO main org.hibernate.cfg.SettingsFactory - Query cache: disabled
+2014-01-06 13:32:58,176 INFO main org.hibernate.cfg.SettingsFactory - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2014-01-06 13:32:58,176 INFO main org.hibernate.cfg.SettingsFactory - Optimize cache for minimal puts: disabled
+2014-01-06 13:32:58,176 INFO main org.hibernate.cfg.SettingsFactory - Structured second-level cache entries: disabled
+2014-01-06 13:32:58,182 INFO main org.hibernate.cfg.SettingsFactory - Statistics: disabled
+2014-01-06 13:32:58,182 INFO main org.hibernate.cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+2014-01-06 13:32:58,182 INFO main org.hibernate.cfg.SettingsFactory - Default entity-mode: pojo
+2014-01-06 13:32:58,182 INFO main org.hibernate.cfg.SettingsFactory - Named query checking : enabled
+2014-01-06 13:32:58,182 INFO main org.hibernate.cfg.SettingsFactory - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2014-01-06 13:32:58,218 INFO main org.hibernate.impl.SessionFactoryImpl - building session factory
+2014-01-06 13:32:58,449 INFO main org.hibernate.impl.SessionFactoryObjectFactory - Not binding factory to JNDI, no JNDI name configured
+2014-01-06 13:32:58,462 INFO main org.hibernate.tool.hbm2ddl.SchemaExport - Running hbm2ddl schema export
+2014-01-06 13:32:58,463 INFO main org.hibernate.tool.hbm2ddl.SchemaExport - exporting generated schema to database
+2014-01-06 13:33:01,569 INFO main org.hibernate.tool.hbm2ddl.SchemaExport - schema export complete
+2014-01-06 13:33:01,782 INFO Thread-0 org.springframework.context.support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@4424f1a9: startup date [Mon Jan 06 13:32:56 CET 2014]; root of context hierarchy
+2014-01-06 13:33:01,783 INFO Thread-0 org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6b730ffb: defining beans [myDataSource,myEmf,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor#0,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+2014-01-06 13:33:01,798 INFO Thread-0 org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'myPersistenceUnit'
+2014-01-06 13:33:01,798 INFO Thread-0 org.hibernate.impl.SessionFactoryImpl - closing
+2014-01-06 13:33:01,798 INFO Thread-0 org.hibernate.tool.hbm2ddl.SchemaExport - Running hbm2ddl schema export
+2014-01-06 13:33:01,799 INFO Thread-0 org.hibernate.tool.hbm2ddl.SchemaExport - exporting generated schema to database
+2014-01-06 13:33:02,699 INFO Thread-0 org.hibernate.tool.hbm2ddl.SchemaExport - schema export complete
+2014-01-06 13:33:32,464 INFO main org.springframework.test.context.TestContextManager - @TestExecutionListeners is not present for class [class fr.afcepf.atod19.ecommerce.jungle.test.TestDao]: using defaults.
+2014-01-06 13:33:32,692 INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [springContext.xml]
+2014-01-06 13:33:32,893 INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [dataSource.xml]
+2014-01-06 13:33:32,960 INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [jpa.xml]
+2014-01-06 13:33:33,067 INFO main org.springframework.context.support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@4424f1a9: startup date [Mon Jan 06 13:33:33 CET 2014]; root of context hierarchy
+2014-01-06 13:33:33,186 INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2014-01-06 13:33:33,294 INFO main org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@8662a8b: defining beans [myDataSource,myEmf,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor#0,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+2014-01-06 13:33:33,365 INFO main org.springframework.jdbc.datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2014-01-06 13:33:33,437 INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'myPersistenceUnit'
+2014-01-06 13:33:33,480 INFO main org.hibernate.cfg.annotations.Version - Hibernate Annotations 3.5.1-Final
+2014-01-06 13:33:33,494 INFO main org.hibernate.cfg.Environment - Hibernate 3.5.1-Final
+2014-01-06 13:33:33,496 INFO main org.hibernate.cfg.Environment - hibernate.properties not found
+2014-01-06 13:33:33,500 INFO main org.hibernate.cfg.Environment - Bytecode provider name : javassist
+2014-01-06 13:33:33,504 INFO main org.hibernate.cfg.Environment - using JDK 1.4 java.sql.Timestamp handling
+2014-01-06 13:33:33,627 INFO main org.hibernate.annotations.common.Version - Hibernate Commons Annotations 3.2.0.Final
+2014-01-06 13:33:33,635 INFO main org.hibernate.ejb.Version - Hibernate EntityManager 3.5.1-Final
+2014-01-06 13:33:33,654 INFO main org.hibernate.ejb.Ejb3Configuration - Processing PersistenceUnitInfo [
+	name: myPersistenceUnit
+	...]
+2014-01-06 13:33:33,821 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.ImageLivre
+2014-01-06 13:33:33,866 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.ImageLivre on table ImageLivre
+2014-01-06 13:33:33,927 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Commande
+2014-01-06 13:33:33,928 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Commande on table Commande
+2014-01-06 13:33:33,965 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Categorie
+2014-01-06 13:33:33,965 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Categorie on table Categorie
+2014-01-06 13:33:33,968 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.LigneCommande
+2014-01-06 13:33:33,968 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.LigneCommande on table LigneCommande
+2014-01-06 13:33:33,970 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Adresse
+2014-01-06 13:33:33,971 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Adresse on table Adresse
+2014-01-06 13:33:33,975 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Livre
+2014-01-06 13:33:33,975 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Livre on table Livre
+2014-01-06 13:33:33,986 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.User
+2014-01-06 13:33:33,986 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.User on table User
+2014-01-06 13:33:33,988 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Client
+2014-01-06 13:33:33,989 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Client on table Client
+2014-01-06 13:33:34,019 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Editeur
+2014-01-06 13:33:34,019 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Editeur on table Editeur
+2014-01-06 13:33:34,021 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Auteur
+2014-01-06 13:33:34,022 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Auteur on table Auteur
+2014-01-06 13:33:34,089 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Commande.lignesCommande -> LigneCommande
+2014-01-06 13:33:34,089 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Categorie.livres -> Livre
+2014-01-06 13:33:34,089 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Adresse.clients -> Client
+2014-01-06 13:33:34,090 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Adresse.editeurs -> Editeur
+2014-01-06 13:33:34,090 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Livre.imagesLivre -> ImageLivre
+2014-01-06 13:33:34,090 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Client.commandes -> Commande
+2014-01-06 13:33:34,090 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Editeur.livres -> Livre
+2014-01-06 13:33:34,092 INFO main org.hibernate.cfg.AnnotationConfiguration - Hibernate Validator not found: ignoring
+2014-01-06 13:33:34,128 INFO main org.hibernate.cfg.search.HibernateSearchEventListenerRegister - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2014-01-06 13:33:34,138 INFO main org.hibernate.connection.ConnectionProviderFactory - Initializing connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+2014-01-06 13:33:34,144 INFO main org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider - Using provided datasource
+2014-01-06 13:33:34,391 INFO main org.hibernate.cfg.SettingsFactory - RDBMS: MySQL, version: 5.1.31-community
+2014-01-06 13:33:34,391 INFO main org.hibernate.cfg.SettingsFactory - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.24 ( Revision: ${bzr.revision-id} )
+2014-01-06 13:33:34,419 INFO main org.hibernate.dialect.Dialect - Using dialect: org.hibernate.dialect.MySQLDialect
+2014-01-06 13:33:34,429 INFO main org.hibernate.transaction.TransactionFactoryFactory - Transaction strategy: org.hibernate.transaction.JDBCTransactionFactory
+2014-01-06 13:33:34,431 INFO main org.hibernate.transaction.TransactionManagerLookupFactory - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2014-01-06 13:33:34,431 INFO main org.hibernate.cfg.SettingsFactory - Automatic flush during beforeCompletion(): disabled
+2014-01-06 13:33:34,431 INFO main org.hibernate.cfg.SettingsFactory - Automatic session close at end of transaction: disabled
+2014-01-06 13:33:34,431 INFO main org.hibernate.cfg.SettingsFactory - JDBC batch size: 15
+2014-01-06 13:33:34,431 INFO main org.hibernate.cfg.SettingsFactory - JDBC batch updates for versioned data: disabled
+2014-01-06 13:33:34,432 INFO main org.hibernate.cfg.SettingsFactory - Scrollable result sets: enabled
+2014-01-06 13:33:34,432 INFO main org.hibernate.cfg.SettingsFactory - JDBC3 getGeneratedKeys(): enabled
+2014-01-06 13:33:34,432 INFO main org.hibernate.cfg.SettingsFactory - Connection release mode: auto
+2014-01-06 13:33:34,433 INFO main org.hibernate.cfg.SettingsFactory - Maximum outer join fetch depth: 2
+2014-01-06 13:33:34,433 INFO main org.hibernate.cfg.SettingsFactory - Default batch fetch size: 1
+2014-01-06 13:33:34,433 INFO main org.hibernate.cfg.SettingsFactory - Generate SQL with comments: disabled
+2014-01-06 13:33:34,433 INFO main org.hibernate.cfg.SettingsFactory - Order SQL updates by primary key: disabled
+2014-01-06 13:33:34,433 INFO main org.hibernate.cfg.SettingsFactory - Order SQL inserts for batching: disabled
+2014-01-06 13:33:34,433 INFO main org.hibernate.cfg.SettingsFactory - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2014-01-06 13:33:34,435 INFO main org.hibernate.hql.ast.ASTQueryTranslatorFactory - Using ASTQueryTranslatorFactory
+2014-01-06 13:33:34,435 INFO main org.hibernate.cfg.SettingsFactory - Query language substitutions: {}
+2014-01-06 13:33:34,435 INFO main org.hibernate.cfg.SettingsFactory - JPA-QL strict compliance: enabled
+2014-01-06 13:33:34,435 INFO main org.hibernate.cfg.SettingsFactory - Second-level cache: enabled
+2014-01-06 13:33:34,435 INFO main org.hibernate.cfg.SettingsFactory - Query cache: disabled
+2014-01-06 13:33:34,436 INFO main org.hibernate.cfg.SettingsFactory - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2014-01-06 13:33:34,436 INFO main org.hibernate.cfg.SettingsFactory - Optimize cache for minimal puts: disabled
+2014-01-06 13:33:34,436 INFO main org.hibernate.cfg.SettingsFactory - Structured second-level cache entries: disabled
+2014-01-06 13:33:34,442 INFO main org.hibernate.cfg.SettingsFactory - Statistics: disabled
+2014-01-06 13:33:34,442 INFO main org.hibernate.cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+2014-01-06 13:33:34,442 INFO main org.hibernate.cfg.SettingsFactory - Default entity-mode: pojo
+2014-01-06 13:33:34,443 INFO main org.hibernate.cfg.SettingsFactory - Named query checking : enabled
+2014-01-06 13:33:34,443 INFO main org.hibernate.cfg.SettingsFactory - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2014-01-06 13:33:34,480 INFO main org.hibernate.impl.SessionFactoryImpl - building session factory
+2014-01-06 13:33:34,724 INFO main org.hibernate.impl.SessionFactoryObjectFactory - Not binding factory to JNDI, no JNDI name configured
+2014-01-06 13:33:34,737 INFO main org.hibernate.tool.hbm2ddl.SchemaExport - Running hbm2ddl schema export
+2014-01-06 13:33:34,738 INFO main org.hibernate.tool.hbm2ddl.SchemaExport - exporting generated schema to database
+2014-01-06 13:33:35,350 INFO main org.hibernate.tool.hbm2ddl.SchemaExport - schema export complete
+2014-01-06 13:33:35,504 INFO Thread-0 org.springframework.context.support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@4424f1a9: startup date [Mon Jan 06 13:33:33 CET 2014]; root of context hierarchy
+2014-01-06 13:33:35,505 INFO Thread-0 org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@8662a8b: defining beans [myDataSource,myEmf,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor#0,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+2014-01-06 13:33:35,515 INFO Thread-0 org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'myPersistenceUnit'
+2014-01-06 13:33:35,515 INFO Thread-0 org.hibernate.impl.SessionFactoryImpl - closing
+2014-01-06 13:43:20,063 INFO main org.springframework.test.context.TestContextManager - @TestExecutionListeners is not present for class [class fr.afcepf.atod19.ecommerce.jungle.test.TestDao]: using defaults.
+2014-01-06 13:43:20,324 INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [springContext.xml]
+2014-01-06 13:43:20,521 INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [dataSource.xml]
+2014-01-06 13:43:20,573 INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [jpa.xml]
+2014-01-06 13:43:20,688 INFO main org.springframework.context.support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@4424f1a9: startup date [Mon Jan 06 13:43:20 CET 2014]; root of context hierarchy
+2014-01-06 13:43:20,814 INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2014-01-06 13:43:20,929 INFO main org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4524670b: defining beans [myDataSource,myEmf,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor#0,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+2014-01-06 13:43:20,999 INFO main org.springframework.jdbc.datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2014-01-06 13:43:21,070 INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'myPersistenceUnit'
+2014-01-06 13:43:21,112 INFO main org.hibernate.cfg.annotations.Version - Hibernate Annotations 3.5.1-Final
+2014-01-06 13:43:21,126 INFO main org.hibernate.cfg.Environment - Hibernate 3.5.1-Final
+2014-01-06 13:43:21,128 INFO main org.hibernate.cfg.Environment - hibernate.properties not found
+2014-01-06 13:43:21,132 INFO main org.hibernate.cfg.Environment - Bytecode provider name : javassist
+2014-01-06 13:43:21,136 INFO main org.hibernate.cfg.Environment - using JDK 1.4 java.sql.Timestamp handling
+2014-01-06 13:43:21,265 INFO main org.hibernate.annotations.common.Version - Hibernate Commons Annotations 3.2.0.Final
+2014-01-06 13:43:21,272 INFO main org.hibernate.ejb.Version - Hibernate EntityManager 3.5.1-Final
+2014-01-06 13:43:21,292 INFO main org.hibernate.ejb.Ejb3Configuration - Processing PersistenceUnitInfo [
+	name: myPersistenceUnit
+	...]
+2014-01-06 13:43:21,472 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Commande
+2014-01-06 13:43:21,521 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Commande on table Commande
+2014-01-06 13:43:21,621 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Categorie
+2014-01-06 13:43:21,621 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Categorie on table Categorie
+2014-01-06 13:43:21,624 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.User
+2014-01-06 13:43:21,624 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.User on table User
+2014-01-06 13:43:21,625 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.LigneCommande
+2014-01-06 13:43:21,626 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.LigneCommande on table LigneCommande
+2014-01-06 13:43:21,628 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Client
+2014-01-06 13:43:21,629 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Client on table Client
+2014-01-06 13:43:21,643 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.ImageLivre
+2014-01-06 13:43:21,644 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.ImageLivre on table ImageLivre
+2014-01-06 13:43:21,646 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Livre
+2014-01-06 13:43:21,646 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Livre on table Livre
+2014-01-06 13:43:21,672 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Adresse
+2014-01-06 13:43:21,672 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Adresse on table Adresse
+2014-01-06 13:43:21,676 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Auteur
+2014-01-06 13:43:21,676 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Auteur on table Auteur
+2014-01-06 13:43:21,679 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Editeur
+2014-01-06 13:43:21,679 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Editeur on table Editeur
+2014-01-06 13:43:21,747 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Commande.lignesCommande -> LigneCommande
+2014-01-06 13:43:21,747 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Categorie.livres -> Livre
+2014-01-06 13:43:21,747 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Client.commandes -> Commande
+2014-01-06 13:43:21,747 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Livre.imagesLivre -> ImageLivre
+2014-01-06 13:43:21,748 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Adresse.clients -> Client
+2014-01-06 13:43:21,748 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Adresse.editeurs -> Editeur
+2014-01-06 13:43:21,748 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Editeur.livres -> Livre
+2014-01-06 13:43:21,750 INFO main org.hibernate.cfg.AnnotationConfiguration - Hibernate Validator not found: ignoring
+2014-01-06 13:43:21,789 INFO main org.hibernate.cfg.search.HibernateSearchEventListenerRegister - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2014-01-06 13:43:21,799 INFO main org.hibernate.connection.ConnectionProviderFactory - Initializing connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+2014-01-06 13:43:21,805 INFO main org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider - Using provided datasource
+2014-01-06 13:43:22,048 INFO main org.hibernate.cfg.SettingsFactory - RDBMS: MySQL, version: 5.1.31-community
+2014-01-06 13:43:22,048 INFO main org.hibernate.cfg.SettingsFactory - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.24 ( Revision: ${bzr.revision-id} )
+2014-01-06 13:43:22,075 INFO main org.hibernate.dialect.Dialect - Using dialect: org.hibernate.dialect.MySQLDialect
+2014-01-06 13:43:22,085 INFO main org.hibernate.transaction.TransactionFactoryFactory - Transaction strategy: org.hibernate.transaction.JDBCTransactionFactory
+2014-01-06 13:43:22,086 INFO main org.hibernate.transaction.TransactionManagerLookupFactory - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2014-01-06 13:43:22,086 INFO main org.hibernate.cfg.SettingsFactory - Automatic flush during beforeCompletion(): disabled
+2014-01-06 13:43:22,086 INFO main org.hibernate.cfg.SettingsFactory - Automatic session close at end of transaction: disabled
+2014-01-06 13:43:22,087 INFO main org.hibernate.cfg.SettingsFactory - JDBC batch size: 15
+2014-01-06 13:43:22,087 INFO main org.hibernate.cfg.SettingsFactory - JDBC batch updates for versioned data: disabled
+2014-01-06 13:43:22,087 INFO main org.hibernate.cfg.SettingsFactory - Scrollable result sets: enabled
+2014-01-06 13:43:22,087 INFO main org.hibernate.cfg.SettingsFactory - JDBC3 getGeneratedKeys(): enabled
+2014-01-06 13:43:22,087 INFO main org.hibernate.cfg.SettingsFactory - Connection release mode: auto
+2014-01-06 13:43:22,088 INFO main org.hibernate.cfg.SettingsFactory - Maximum outer join fetch depth: 2
+2014-01-06 13:43:22,088 INFO main org.hibernate.cfg.SettingsFactory - Default batch fetch size: 1
+2014-01-06 13:43:22,088 INFO main org.hibernate.cfg.SettingsFactory - Generate SQL with comments: disabled
+2014-01-06 13:43:22,088 INFO main org.hibernate.cfg.SettingsFactory - Order SQL updates by primary key: disabled
+2014-01-06 13:43:22,088 INFO main org.hibernate.cfg.SettingsFactory - Order SQL inserts for batching: disabled
+2014-01-06 13:43:22,089 INFO main org.hibernate.cfg.SettingsFactory - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2014-01-06 13:43:22,091 INFO main org.hibernate.hql.ast.ASTQueryTranslatorFactory - Using ASTQueryTranslatorFactory
+2014-01-06 13:43:22,091 INFO main org.hibernate.cfg.SettingsFactory - Query language substitutions: {}
+2014-01-06 13:43:22,091 INFO main org.hibernate.cfg.SettingsFactory - JPA-QL strict compliance: enabled
+2014-01-06 13:43:22,091 INFO main org.hibernate.cfg.SettingsFactory - Second-level cache: enabled
+2014-01-06 13:43:22,091 INFO main org.hibernate.cfg.SettingsFactory - Query cache: disabled
+2014-01-06 13:43:22,091 INFO main org.hibernate.cfg.SettingsFactory - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2014-01-06 13:43:22,091 INFO main org.hibernate.cfg.SettingsFactory - Optimize cache for minimal puts: disabled
+2014-01-06 13:43:22,091 INFO main org.hibernate.cfg.SettingsFactory - Structured second-level cache entries: disabled
+2014-01-06 13:43:22,100 INFO main org.hibernate.cfg.SettingsFactory - Statistics: disabled
+2014-01-06 13:43:22,100 INFO main org.hibernate.cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+2014-01-06 13:43:22,100 INFO main org.hibernate.cfg.SettingsFactory - Default entity-mode: pojo
+2014-01-06 13:43:22,100 INFO main org.hibernate.cfg.SettingsFactory - Named query checking : enabled
+2014-01-06 13:43:22,100 INFO main org.hibernate.cfg.SettingsFactory - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2014-01-06 13:43:22,137 INFO main org.hibernate.impl.SessionFactoryImpl - building session factory
+2014-01-06 13:43:22,375 INFO main org.hibernate.impl.SessionFactoryObjectFactory - Not binding factory to JNDI, no JNDI name configured
+2014-01-06 13:43:22,388 INFO main org.hibernate.tool.hbm2ddl.SchemaExport - Running hbm2ddl schema export
+2014-01-06 13:43:22,389 INFO main org.hibernate.tool.hbm2ddl.SchemaExport - exporting generated schema to database
+2014-01-06 13:43:23,911 INFO main org.hibernate.tool.hbm2ddl.SchemaExport - schema export complete
+2014-01-06 13:43:24,105 INFO Thread-0 org.springframework.context.support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@4424f1a9: startup date [Mon Jan 06 13:43:20 CET 2014]; root of context hierarchy
+2014-01-06 13:43:24,106 INFO Thread-0 org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4524670b: defining beans [myDataSource,myEmf,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor#0,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+2014-01-06 13:43:24,120 INFO Thread-0 org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'myPersistenceUnit'
+2014-01-06 13:43:24,120 INFO Thread-0 org.hibernate.impl.SessionFactoryImpl - closing
+2014-01-06 13:43:24,120 INFO Thread-0 org.hibernate.tool.hbm2ddl.SchemaExport - Running hbm2ddl schema export
+2014-01-06 13:43:24,122 INFO Thread-0 org.hibernate.tool.hbm2ddl.SchemaExport - exporting generated schema to database
+2014-01-06 13:43:24,766 INFO Thread-0 org.hibernate.tool.hbm2ddl.SchemaExport - schema export complete
+2014-01-06 13:43:54,353 INFO main org.springframework.test.context.TestContextManager - @TestExecutionListeners is not present for class [class fr.afcepf.atod19.ecommerce.jungle.test.TestDao]: using defaults.
+2014-01-06 13:43:54,619 INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [springContext.xml]
+2014-01-06 13:43:54,824 INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [dataSource.xml]
+2014-01-06 13:43:54,894 INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [jpa.xml]
+2014-01-06 13:43:55,004 INFO main org.springframework.context.support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@4424f1a9: startup date [Mon Jan 06 13:43:55 CET 2014]; root of context hierarchy
+2014-01-06 13:43:55,124 INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2014-01-06 13:43:55,233 INFO main org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6b730ffb: defining beans [myDataSource,myEmf,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor#0,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+2014-01-06 13:43:55,308 INFO main org.springframework.jdbc.datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2014-01-06 13:43:55,376 INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'myPersistenceUnit'
+2014-01-06 13:43:55,418 INFO main org.hibernate.cfg.annotations.Version - Hibernate Annotations 3.5.1-Final
+2014-01-06 13:43:55,433 INFO main org.hibernate.cfg.Environment - Hibernate 3.5.1-Final
+2014-01-06 13:43:55,435 INFO main org.hibernate.cfg.Environment - hibernate.properties not found
+2014-01-06 13:43:55,438 INFO main org.hibernate.cfg.Environment - Bytecode provider name : javassist
+2014-01-06 13:43:55,442 INFO main org.hibernate.cfg.Environment - using JDK 1.4 java.sql.Timestamp handling
+2014-01-06 13:43:55,555 INFO main org.hibernate.annotations.common.Version - Hibernate Commons Annotations 3.2.0.Final
+2014-01-06 13:43:55,562 INFO main org.hibernate.ejb.Version - Hibernate EntityManager 3.5.1-Final
+2014-01-06 13:43:55,582 INFO main org.hibernate.ejb.Ejb3Configuration - Processing PersistenceUnitInfo [
+	name: myPersistenceUnit
+	...]
+2014-01-06 13:43:55,841 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Categorie
+2014-01-06 13:43:55,887 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Categorie on table Categorie
+2014-01-06 13:43:55,968 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.User
+2014-01-06 13:43:55,968 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.User on table User
+2014-01-06 13:43:55,970 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Client
+2014-01-06 13:43:55,971 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Client on table Client
+2014-01-06 13:43:55,995 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Commande
+2014-01-06 13:43:55,995 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Commande on table Commande
+2014-01-06 13:43:56,006 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.ImageLivre
+2014-01-06 13:43:56,007 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.ImageLivre on table ImageLivre
+2014-01-06 13:43:56,009 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Auteur
+2014-01-06 13:43:56,009 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Auteur on table Auteur
+2014-01-06 13:43:56,014 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Adresse
+2014-01-06 13:43:56,015 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Adresse on table Adresse
+2014-01-06 13:43:56,020 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Editeur
+2014-01-06 13:43:56,020 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Editeur on table Editeur
+2014-01-06 13:43:56,036 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.LigneCommande
+2014-01-06 13:43:56,036 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.LigneCommande on table LigneCommande
+2014-01-06 13:43:56,039 INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: fr.afcepf.atod19.ecommerce.jungle.entity.Livre
+2014-01-06 13:43:56,039 INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity fr.afcepf.atod19.ecommerce.jungle.entity.Livre on table Livre
+2014-01-06 13:43:56,111 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Categorie.livres -> Livre
+2014-01-06 13:43:56,112 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Client.commandes -> Commande
+2014-01-06 13:43:56,112 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Commande.lignesCommande -> LigneCommande
+2014-01-06 13:43:56,112 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Adresse.clients -> Client
+2014-01-06 13:43:56,113 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Adresse.editeurs -> Editeur
+2014-01-06 13:43:56,113 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Editeur.livres -> Livre
+2014-01-06 13:43:56,113 INFO main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: fr.afcepf.atod19.ecommerce.jungle.entity.Livre.imagesLivre -> ImageLivre
+2014-01-06 13:43:56,116 INFO main org.hibernate.cfg.AnnotationConfiguration - Hibernate Validator not found: ignoring
+2014-01-06 13:43:56,153 INFO main org.hibernate.cfg.search.HibernateSearchEventListenerRegister - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2014-01-06 13:43:56,162 INFO main org.hibernate.connection.ConnectionProviderFactory - Initializing connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+2014-01-06 13:43:56,169 INFO main org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider - Using provided datasource
+2014-01-06 13:43:56,408 INFO main org.hibernate.cfg.SettingsFactory - RDBMS: MySQL, version: 5.1.31-community
+2014-01-06 13:43:56,408 INFO main org.hibernate.cfg.SettingsFactory - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.24 ( Revision: ${bzr.revision-id} )
+2014-01-06 13:43:56,436 INFO main org.hibernate.dialect.Dialect - Using dialect: org.hibernate.dialect.MySQLDialect
+2014-01-06 13:43:56,446 INFO main org.hibernate.transaction.TransactionFactoryFactory - Transaction strategy: org.hibernate.transaction.JDBCTransactionFactory
+2014-01-06 13:43:56,447 INFO main org.hibernate.transaction.TransactionManagerLookupFactory - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2014-01-06 13:43:56,448 INFO main org.hibernate.cfg.SettingsFactory - Automatic flush during beforeCompletion(): disabled
+2014-01-06 13:43:56,448 INFO main org.hibernate.cfg.SettingsFactory - Automatic session close at end of transaction: disabled
+2014-01-06 13:43:56,448 INFO main org.hibernate.cfg.SettingsFactory - JDBC batch size: 15
+2014-01-06 13:43:56,448 INFO main org.hibernate.cfg.SettingsFactory - JDBC batch updates for versioned data: disabled
+2014-01-06 13:43:56,448 INFO main org.hibernate.cfg.SettingsFactory - Scrollable result sets: enabled
+2014-01-06 13:43:56,448 INFO main org.hibernate.cfg.SettingsFactory - JDBC3 getGeneratedKeys(): enabled
+2014-01-06 13:43:56,449 INFO main org.hibernate.cfg.SettingsFactory - Connection release mode: auto
+2014-01-06 13:43:56,449 INFO main org.hibernate.cfg.SettingsFactory - Maximum outer join fetch depth: 2
+2014-01-06 13:43:56,449 INFO main org.hibernate.cfg.SettingsFactory - Default batch fetch size: 1
+2014-01-06 13:43:56,449 INFO main org.hibernate.cfg.SettingsFactory - Generate SQL with comments: disabled
+2014-01-06 13:43:56,449 INFO main org.hibernate.cfg.SettingsFactory - Order SQL updates by primary key: disabled
+2014-01-06 13:43:56,450 INFO main org.hibernate.cfg.SettingsFactory - Order SQL inserts for batching: disabled
+2014-01-06 13:43:56,450 INFO main org.hibernate.cfg.SettingsFactory - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2014-01-06 13:43:56,452 INFO main org.hibernate.hql.ast.ASTQueryTranslatorFactory - Using ASTQueryTranslatorFactory
+2014-01-06 13:43:56,452 INFO main org.hibernate.cfg.SettingsFactory - Query language substitutions: {}
+2014-01-06 13:43:56,452 INFO main org.hibernate.cfg.SettingsFactory - JPA-QL strict compliance: enabled
+2014-01-06 13:43:56,452 INFO main org.hibernate.cfg.SettingsFactory - Second-level cache: enabled
+2014-01-06 13:43:56,452 INFO main org.hibernate.cfg.SettingsFactory - Query cache: disabled
+2014-01-06 13:43:56,452 INFO main org.hibernate.cfg.SettingsFactory - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2014-01-06 13:43:56,452 INFO main org.hibernate.cfg.SettingsFactory - Optimize cache for minimal puts: disabled
+2014-01-06 13:43:56,452 INFO main org.hibernate.cfg.SettingsFactory - Structured second-level cache entries: disabled
+2014-01-06 13:43:56,458 INFO main org.hibernate.cfg.SettingsFactory - Statistics: disabled
+2014-01-06 13:43:56,458 INFO main org.hibernate.cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+2014-01-06 13:43:56,459 INFO main org.hibernate.cfg.SettingsFactory - Default entity-mode: pojo
+2014-01-06 13:43:56,459 INFO main org.hibernate.cfg.SettingsFactory - Named query checking : enabled

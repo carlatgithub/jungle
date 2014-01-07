@@ -1,0 +1,11 @@
+fr\afcepf\atod19\ecommerce\jungle\entity\Adresse.class
+fr\afcepf\atod19\ecommerce\jungle\entity\ImageLivre.class
+fr\afcepf\atod19\ecommerce\jungle\entity\Livre.class
+fr\afcepf\atod19\ecommerce\jungle\entity\Commande.class
+fr\afcepf\atod19\ecommerce\jungle\entity\Client.class
+fr\afcepf\atod19\ecommerce\jungle\entity\Auteur.class
+fr\afcepf\atod19\ecommerce\jungle\entity\Editeur.class
+fr\afcepf\atod19\ecommerce\jungle\entity\User.class
+fr\afcepf\atod19\ecommerce\jungle\entity\Admin.class
+fr\afcepf\atod19\ecommerce\jungle\entity\LigneCommande.class
+fr\afcepf\atod19\ecommerce\jungle\entity\Categorie.class
