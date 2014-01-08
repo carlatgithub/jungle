@@ -1,4 +1,4 @@
-
+﻿
 	Conception du site de vente en ligne de livre.
 
 
@@ -30,3 +30,5 @@ Une capture d'ecran du diagramme de classe.
 Description_cas_dutilisation_administrateur
 -------------------------------------------
 Les cas d'utilisation pour l'acteur administrateur (a supprimer comme deja integ� dans le document princical jungle)
+
+==the end==
