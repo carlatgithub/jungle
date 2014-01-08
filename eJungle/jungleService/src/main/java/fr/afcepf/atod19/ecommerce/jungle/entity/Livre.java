@@ -13,6 +13,7 @@
 
 package fr.afcepf.atod19.ecommerce.jungle.entity;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -51,6 +52,9 @@ public class Livre {
 	@JoinColumn(name="ref_categorie")
 	private Categorie categorie;
 	
+	public Livre() {
+		auteurs = new ArrayList<Auteur>();
+	}
 	public String getTitre() {
 		return titre;
 	}

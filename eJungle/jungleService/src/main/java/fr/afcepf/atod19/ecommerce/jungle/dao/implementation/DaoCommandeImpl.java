@@ -2,11 +2,13 @@ package fr.afcepf.atod19.ecommerce.jungle.dao.implementation;
 
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
 import fr.afcepf.atod19.ecommerce.jungle.dao.interfaces.IDaoCommande;
 import fr.afcepf.atod19.ecommerce.jungle.entity.Adresse;
 import fr.afcepf.atod19.ecommerce.jungle.entity.Client;
 import fr.afcepf.atod19.ecommerce.jungle.entity.Commande;
-
+@Component
 public class DaoCommandeImpl extends GenericDaoImpl implements IDaoCommande {
 
 	@Override

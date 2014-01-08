@@ -12,6 +12,7 @@
 
 
 package fr.afcepf.atod19.ecommerce.jungle.entity;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -32,7 +33,9 @@ public class Categorie {
 	@OneToMany(fetch=FetchType.LAZY, mappedBy="categorie")
 	private List<Livre> livres;
 	
-	
+	public Categorie() {
+		livres = new ArrayList<Livre>();
+	}
 	public List<Livre> getLivres() {
 		return livres;
 	}

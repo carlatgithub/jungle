@@ -15,7 +15,7 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 	<import resource="dataSource.xml" />
 	<import resource="jpa.xml" />
 
-	<!-- <context:annotation-config /> <context:component-scan base-package="fr.afcepf.atod19.appli"/> -->
+	<context:annotation-config /> <context:component-scan base-package="fr.afcepf.atod19.ecommerce"/> 
 
 	<aop:aspectj-autoproxy />
 	<!-- <bean id="myLogAspect" class="fr.afcepf.atod19.appli.util.MyLogAspect"> 
@@ -23,10 +23,10 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
 	<!-- bloc bean du dao en version jdbc avec scope="singleton" par defaut -->
 
-	<!-- <bean id="idCompteDaoJdbc" class="fr.afcepf.atod19.appli.dao.jdbc.CompteDaoJdbc">
+<!-- 	<bean id="daoLivre" class="fr.afcepf.atod19.ecommerce.jungle.dao.implementation.DaoLivreImpl">
 		<property name="dataSource" ref="myDataSource" />
-	</bean>
- -->
+	</bean> -->
+ 
 	<!-- <bean id="idGestionComptes" class="fr.afcepf.atod19.appli.service.GestionComptesImpl"> -->
 		<!-- injection du dao: (page 14) -->
 		<!-- <property name="compteDao" ref="idCompteDaoJpa" />

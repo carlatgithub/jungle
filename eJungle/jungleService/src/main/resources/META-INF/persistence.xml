@@ -13,7 +13,7 @@ http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
 			<property name="format_sql" value="true"/>
 			<!-- <property name="hibernate.archive.autodetection" 
 			value="class, hbm"/> -->
-			<property name="hibernate.hbm2ddl.auto" value="create" /> 
+			<property name="hibernate.hbm2ddl.auto" value="update" /> 
 		</properties>
 	</persistence-unit>
 </persistence>
