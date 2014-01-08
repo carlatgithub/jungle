@@ -28,6 +28,8 @@ import javax.persistence.Table;
 @Table
 @Inheritance(strategy=InheritanceType.JOINED )
 public class Client extends User {
+	
+	private static final long serialVersionUID = 1L;
 	private String nom;
 	private String prenom;
 	private Date date_creation;

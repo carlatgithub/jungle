@@ -8,8 +8,8 @@
 //  @ Author : 
 //
 //
-
-
+//
+// commentaire 
 
 package fr.afcepf.atod19.ecommerce.jungle.entity;
 
@@ -20,4 +20,6 @@ import javax.persistence.Table;
 @Table
 @Inheritance(strategy=InheritanceType.JOINED )
 public class Admin extends User {
+
+	private static final long serialVersionUID = 1L;
 }
