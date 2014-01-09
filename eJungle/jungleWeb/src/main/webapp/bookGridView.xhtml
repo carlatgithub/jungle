@@ -5,10 +5,7 @@
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:p="http://primefaces.org/ui">
 
-<!-- 
-		Replace path to template, title, header and body
-		with actual data.
-	 -->
+
 <ui:composition template="/templates/common.xhtml">
 	<ui:define name="pageTitle">Jungle Books</ui:define>
 	<ui:define name="pageMetaData">
@@ -24,11 +21,11 @@
   
         <p:panel header="#{car.model}" style="text-align:center">  
             <h:panelGrid columns="1" style="width:100%">  
-                <p:graphicImage value="/images/cars/#{car.manufacturer}.jpg"/>   
+                <p:graphicImage value="/images/livre.jpg"/>   
   
                 <h:outputText value="#{car.year}" />  
   
-                <p:commandLink update=":form:carDetail" oncomplete="PF('carDialog').show()" title="View Detail">  
+                <p:commandLink update=":form:carDetail" oncomplete="carDialog.show()" title="View Detail">  
                     <h:outputText styleClass="ui-icon ui-icon-search" style="margin:0 auto;" />   
                     <f:setPropertyActionListener value="#{car}"   
                             target="#{gridBean.selectedCar}" />  
