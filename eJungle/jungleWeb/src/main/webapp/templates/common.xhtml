@@ -2,11 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:f="http://java.sun.com/jsf/core">
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
       
 <f:view contentType="text/html">
-<ui:insert name="pageMetaData"></ui:insert>
+
 <h:head>
+<ui:insert name="pageMetaData"></ui:insert>
+
 		<title><ui:insert name="pageTitle">Page Title</ui:insert></title>
 		<link rel="stylesheet" href="../css/foundation.css" />
 		<link rel="stylesheet" href="../css/normalize.css" />
@@ -16,46 +19,35 @@
 </h:head>
 
 <h:body bgcolor="#ffffff">
-<table style="border:1px solid #CAD6E0"  align="center" cellpadding="0" cellspacing="0" border="0" width="400">
-<tbody>
 
-	<tr>
-		<td class="header" height="42" align="center" valign="middle" width="100%" bgcolor="#E4EBEB">
-			<ui:include src="header.xhtml"></ui:include>
-		</td>
-	</tr>
-	<tr>
-		<td class="header" height="42" align="center" valign="middle" width="100%" bgcolor="#E4EBEB">
-			<ui:insert name="pageHeader">Page Header</ui:insert>
-		</td>
-	</tr>
-	<tr>
-		<td height="1" width="100%" bgcolor="#CAD6E0"></td>
-	</tr>	
 
-	<tr>
-		<td width="100%"  colspan="2">
-			<table width="100%" style="height:150px" align="left" cellpadding="0" cellspacing="0" border="0">
-			<tbody>
-				<tr>
-					<td align="center" width="100%" valign="middle">
-					
-					<ui:insert name="body">Page Body</ui:insert>
-					
-					</td>
-				</tr>
-			</tbody>
-			</table>
-		</td>
-	</tr>	
-	
-	<tr>
-		<td colspan="2" align="center"  valign="bottom" height="1" width="100%" bgcolor="#CAD6E0">
-		<a href="welcome.jsf" >retour accueil</a>
-		</td>
-	</tr>
-</tbody>
-</table>
+<p:layout fullPage="true">  
+  
+    <p:layoutUnit position="north" size="100" header="Top" resizable="true" closable="true" collapsible="true">  
+        <h:outputText value="North unit content." />  
+    </p:layoutUnit>  
+  
+    <p:layoutUnit position="south" size="100" header="Bottom" resizable="true" closable="true" collapsible="true">  
+        <h:outputText value="South unit content." />  
+    </p:layoutUnit>  
+  
+    <p:layoutUnit position="west" size="200" header="Left" resizable="true" closable="true" collapsible="true">  
+        <h:outputText value="West unit content." />  
+    </p:layoutUnit>  
+  
+    <p:layoutUnit position="east" size="200" header="Right" resizable="true" closable="true" collapsible="true" effect="drop">  
+        <h:outputText value="Right unit content." />  
+    </p:layoutUnit>  
+  
+    <p:layoutUnit position="center">  
+ 
+            This fullPage layout consists of five different layoutUnits which are resizable and closable by default.  
+ 			 <ui:insert name="body">the template body</ui:insert>
+		
+    </p:layoutUnit>  
+  
+</p:layout>  
+
 </h:body>
 </f:view>
 </html>
