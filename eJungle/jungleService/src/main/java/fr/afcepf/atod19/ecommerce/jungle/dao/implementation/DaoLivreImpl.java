@@ -43,7 +43,36 @@ public class DaoLivreImpl extends GenericDaoImpl implements IDaoLivre {
 		Query query = getEntityManager().createQuery("From Livre ", Livre.class);
 		return query.getResultList();
 	}
-	
-	
+
+	@Override
+	public void creerLivre(Livre unLivre) {
+		if(null != unLivre.getCategorie() && null == unLivre.getCategorie().getId())
+		{
+			persistNewEntity(unLivre.getCategorie());
+		}
+		if((null != unLivre.getEditeur() && null != unLivre.getEditeur().getAdresseEditeur())
+				&& null == unLivre.getEditeur().getAdresseEditeur().getId())
+		{
+			persistNewEntity(unLivre.getEditeur().getAdresseEditeur());
+		}
+		if(null != unLivre.getEditeur() && null == unLivre.getEditeur().getId())
+		{
+			persistNewEntity(unLivre.getEditeur());
+		}
 		
+		for(Auteur unAuteur:unLivre.getAuteurs())
+		{
+			if(null == unAuteur.getId())
+			{
+				persistNewEntity(unAuteur);
+			}
+			
+		}
+			
+		persistNewEntity(unLivre);
+		
+	}
+	
+	
+	
 }

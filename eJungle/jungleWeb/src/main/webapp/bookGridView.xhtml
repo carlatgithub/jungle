@@ -5,55 +5,59 @@
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:p="http://primefaces.org/ui">
 
-
+<!-- 
+		Replace path to template, title, header and body
+		with actual data.
+	 -->
 <ui:composition template="/templates/common.xhtml">
-	<ui:define name="pageTitle">Jungle Books</ui:define>
-	<ui:define name="pageMetaData">
-	</ui:define>
+	<ui:define name="pageTitle">login</ui:define>
+	<ui:define name="pageHeader">Grid</ui:define>
 	<ui:define name="body">
 
 <h:form id="form">  
   
-    <p:dataGrid var="car" value="#{gridBean.cars}" columns="3"  
+    <p:dataGrid var="livre" value="#{gridBean.livres}" columns="3"  
         rows="12" paginator="true"  
         paginatorTemplate="{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"  
         rowsPerPageTemplate="9,12,15">  
   
-        <p:panel header="#{car.model}" style="text-align:center">  
+        <p:panel header="#{livre.numeroISBN}" style="text-align:center">  
             <h:panelGrid columns="1" style="width:100%">  
-                <p:graphicImage value="/images/livre.jpg"/>   
+                <p:graphicImage value="/images/livre/#{livre.titre}.jpg"/>   
   
-                <h:outputText value="#{car.year}" />  
+                <h:outputText value="#{livre.datePublication}" />  
   
                 <p:commandLink update=":form:carDetail" oncomplete="carDialog.show()" title="View Detail">  
                     <h:outputText styleClass="ui-icon ui-icon-search" style="margin:0 auto;" />   
-                    <f:setPropertyActionListener value="#{car}"   
-                            target="#{gridBean.selectedCar}" />  
+                    <f:setPropertyActionListener value="#{livre}"   
+                            target="#{gridBean.selectedLivre}" />  
                 </p:commandLink>  
             </h:panelGrid>  
         </p:panel>  
   
     </p:dataGrid>  
       
-    <p:dialog header="Car Detail" widgetVar="carDialog" modal="true">  
+    <p:dialog header="Livre Detail" widgetVar="carDialog" modal="true">  
         <p:outputPanel id="carDetail" style="text-align:center;">  
           
-            <p:graphicImage value="/images/cars/#{gridBean.selectedCar.manufacturer}.jpg"/>  
+            <p:graphicImage value="/images/livre/#{gridBean.selectedLivre.titre}.jpg"/>  
               
             <h:panelGrid  columns="2" cellpadding="5">  
                 <h:outputLabel for="modelNo" value="Model No: " />  
-                <h:outputText id="modelNo" value="#{gridBean.selectedCar.model}" />  
+                <h:outputText id="modelNo" value="#{gridBean.selectedLivre.numeroISBN}" />  
                   
                 <h:outputLabel for="year" value="Year: " />  
-                <h:outputText id="year" value="#{gridBean.selectedCar.year}" />  
+                <h:outputText id="year" value="#{gridBean.selectedLivre.datePublication}" />  
                   
                 <h:outputLabel for="color" value="Color: " />  
-                <h:outputText id="color" value="#{gridBean.selectedCar.color}" style="color:#{gridBean.selectedCar.color}"/>  
+                <h:outputText id="color" value="#{gridBean.selectedLivre.titre}"/>  
             </h:panelGrid>  
         </p:outputPanel>  
     </p:dialog>  
   
 </h:form>  
+
+
 
 	</ui:define>
 

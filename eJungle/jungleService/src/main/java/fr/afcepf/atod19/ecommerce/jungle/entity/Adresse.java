@@ -12,6 +12,7 @@
 
 
 package fr.afcepf.atod19.ecommerce.jungle.entity;
+import java.io.Serializable;
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -25,7 +26,9 @@ import javax.persistence.Table;
 
 @Entity
 @Table
-public class Adresse {
+public class Adresse implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
 	private String rue;
 	private String numeroDeRue;
 	private String codePostal;

@@ -26,8 +26,8 @@ public class GenericDaoImpl implements IGenericDao{
 	}
 
 	@Override
-	public <T> void updateEntity(T entity) {
-		entityManager.merge(entity);
+	public <T> T updateEntity(T entity) {
+		return entityManager.merge(entity);
 		
 	}
 

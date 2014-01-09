@@ -13,6 +13,7 @@
 
 package fr.afcepf.atod19.ecommerce.jungle.entity;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -28,7 +29,9 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 @Entity
 @Table
-public class Livre {
+public class Livre implements Serializable{
+	
+	private static final long serialVersionUID = 1L;
 	private String titre;
 	@Id
 	private String numeroISBN;

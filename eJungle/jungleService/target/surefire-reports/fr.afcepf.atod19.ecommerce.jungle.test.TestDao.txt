@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: fr.afcepf.atod19.ecommerce.jungle.test.TestDao
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.411 sec

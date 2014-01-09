@@ -13,13 +13,15 @@
 
 package fr.afcepf.atod19.ecommerce.jungle.entity;
 
+import java.io.Serializable;
+
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.Table;
 
 @Table
 @Inheritance(strategy=InheritanceType.JOINED )
-public class Admin extends User {
+public class Admin extends User implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 }

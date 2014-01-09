@@ -26,7 +26,7 @@ public class TestDao {
 	@Inject
 	IGestionCatalogue services;
 	
-	@Test
+	/*@Test
 	public void testAjouterLivre(){
 		for(int index = 0; index <10 ; index++){
 		Categorie uneCat = new Categorie();
@@ -63,7 +63,7 @@ public class TestDao {
 		Assert.assertTrue(unLivre != null);
 		services.ajouterLivre(unLivre);
 		}
-	}
+	}*/
 	
 	@Test
 	public void testLivreSelonISBN(){

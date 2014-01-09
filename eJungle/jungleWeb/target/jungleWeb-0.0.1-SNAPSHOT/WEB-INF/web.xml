@@ -28,5 +28,11 @@ id="WebApp_ID" version="3.0">
 <param-name>facelets.DEVELOPMENT</param-name>
 <param-value>true</param-value>
 </context-param>
-  
+  <context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/classes/springConf1.xml, ...</param-value>
+   </context-param>
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
 </web-app>

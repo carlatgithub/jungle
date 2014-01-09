@@ -7,10 +7,10 @@ import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import fr.afcepf.atod19.ecommerce.jungle.dao.interfaces.IDaoLivre;
-import fr.afcepf.atod19.ecommerce.jungle.entity.Auteur;
 import fr.afcepf.atod19.ecommerce.jungle.entity.Livre;
 import fr.afcepf.atod19.ecommerce.jungle.services.interfaces.IGestionCatalogue;
-@Component
+
+@Component(value="gestionCatalogue")
 @Transactional
 public class GestionCatalogue implements IGestionCatalogue {
 
@@ -47,12 +47,7 @@ public class GestionCatalogue implements IGestionCatalogue {
 
 	@Override
 	public void ajouterLivre(Livre unLivre) {
-		daoLivre.persistNewEntity(unLivre.getCategorie());
-		daoLivre.persistNewEntity(unLivre.getEditeur().getAdresseEditeur());
-		daoLivre.persistNewEntity(unLivre.getEditeur());
-		for(Auteur unAuteur:unLivre.getAuteurs())
-			daoLivre.persistNewEntity(unAuteur);
-		daoLivre.persistNewEntity(unLivre);
+		daoLivre.creerLivre(unLivre);
 	}
 
 	@Override

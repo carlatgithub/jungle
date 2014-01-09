@@ -13,6 +13,7 @@
 
 package fr.afcepf.atod19.ecommerce.jungle.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
@@ -27,7 +28,7 @@ import javax.persistence.Table;
 @Entity
 @Table
 @Inheritance(strategy=InheritanceType.JOINED )
-public class Client extends User {
+public class Client extends User implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
 	private String nom;

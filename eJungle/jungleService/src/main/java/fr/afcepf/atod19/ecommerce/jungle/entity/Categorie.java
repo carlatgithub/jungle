@@ -12,6 +12,7 @@
 
 
 package fr.afcepf.atod19.ecommerce.jungle.entity;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,7 +25,9 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 @Entity
 @Table
-public class Categorie {
+public class Categorie implements Serializable{
+	
+	private static final long serialVersionUID = 1L;
 	private String nom;
 	private String description;
 	@Id

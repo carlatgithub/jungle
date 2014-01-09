@@ -12,6 +12,7 @@
 
 
 package fr.afcepf.atod19.ecommerce.jungle.entity;
+import java.io.Serializable;
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -22,7 +23,9 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 @Entity
 @Table
-public class Auteur {
+public class Auteur implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer id;
