@@ -2,7 +2,10 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
 		http://maven.apache.org/xsd/maven-4.0.0.xsd">
+		
   <modelVersion>4.0.0</modelVersion>
+  
+            
   <parent>
     <groupId>fr.afcepf.atod19.ecommerce</groupId>
     <artifactId>eJungle</artifactId>
@@ -10,4 +13,13 @@
   </parent>
   <artifactId>jungleWeb</artifactId>
   <packaging>war</packaging>
+  
+  
+  <dependencies>
+  	<dependency>
+  		<groupId>javax.faces</groupId>
+  		<artifactId>jsf-api</artifactId>
+  		<version>2.1</version>
+  	</dependency>
+  </dependencies>
 </project>
