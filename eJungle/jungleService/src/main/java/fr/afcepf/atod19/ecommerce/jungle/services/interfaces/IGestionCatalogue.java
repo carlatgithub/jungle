@@ -11,5 +11,6 @@ public interface IGestionCatalogue {
 	Livre livreSelonISBN(String numeroIBSN);
 	void ajouterLivre(Livre unLivre);
 	List<Livre> allLivre();
+	
 
 }
