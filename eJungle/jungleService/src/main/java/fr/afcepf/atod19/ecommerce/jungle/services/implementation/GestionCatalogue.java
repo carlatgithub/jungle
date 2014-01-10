@@ -54,5 +54,11 @@ public class GestionCatalogue implements IGestionCatalogue {
 	public List<Livre> allLivre() {
 		return daoLivre.getAllLivre();
 	}
+
+	@Override
+	public List<Livre> rechercherSelonTitre(String titre) {
+		return daoLivre.rechercheLivreSelonTitre(titre);
+	}
+	
 	
 }
