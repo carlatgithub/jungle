@@ -8,33 +8,33 @@ import javax.faces.bean.ManagedBean;
 @ManagedBean
 public class Commande {
 	
-	List<Integer> prices;
-	int prix;
+	List<Integer> quantities;
+	int quantity;
 	
 	public Commande() {
-		prices = new ArrayList<Integer>();
-		prices.add(new Integer(1));
-		prices.add(new Integer(2));
-		prices.add(new Integer(3));
-		prices.add(new Integer(4));
+		quantities = new ArrayList<Integer>();
+		quantities.add(new Integer(1));
+		quantities.add(new Integer(2));
+		quantities.add(new Integer(3));
+		quantities.add(new Integer(4));
+		quantities.add(new Integer(5));
 	}
 
-	public List<Integer> getPrices() {
-		return prices;
+	public List<Integer> getQuantities() {
+		return quantities;
 	}
 
-	public void setPrices(List<Integer> prices) {
-		this.prices = prices;
+	public void setQuantities(List<Integer> quantities) {
+		this.quantities = quantities;
 	}
 
-	public int getPrix() {
-		return prix;
+	public int getQuantity() {
+		return quantity;
 	}
 
-	public void setPrix(int prix) {
-		this.prix = prix;
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
 	}
+
 	
-	
-
 }

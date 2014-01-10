@@ -26,7 +26,11 @@
                 <p:graphicImage value="/images/livre/#{livre.titre}.jpg"/>   
   
                 <h:outputText value="#{livre.datePublication}" />  
-  
+            
+              <h:selectOneMenu id="quantity" value="#{commande.quantity}" required="true">  
+                <f:selectItems value="#{commande.quantities}" />  
+            </h:selectOneMenu>
+            
                 <p:commandLink update=":form:carDetail" oncomplete="carDialog.show()" title="View Detail">  
                     <h:outputText styleClass="ui-icon ui-icon-search" style="margin:0 auto;" />   
                     <f:setPropertyActionListener value="#{livre}"   
