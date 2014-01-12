@@ -69,6 +69,7 @@ public class TestDao {
 	public void testLivreSelonISBN(){
 		Assert.assertTrue(true);
 	}
+	
     @Test
     public void tousLesLivres(){
     	List<Livre> mesLivre = services.allLivre();
@@ -77,4 +78,19 @@ public class TestDao {
     		System.out.println(unLivre.getTitre() + " " + unLivre.getNumeroISBN());
     	}
     }
+    
+    @Test
+    public void rechercheSelonTitre(){
+    	// the pattern should not exist the the DB
+    	List<Livre> livres0 = services.rechercherSelonTitre("the quick brown fox jumped over the lazy dog abcdef etc");
+    	//System.out.println(livres0);
+    	Assert.assertTrue(livres0.isEmpty());
+
+    	
+    	// "POPIPOPI" does exist but this will change so test will fail at some point
+    	List<Livre> livres = services.rechercherSelonTitre("POPIPOPI");
+    	int count = livres.size();
+    	Assert.assertTrue(count > 0);
+    }
+    
 }

@@ -3,6 +3,7 @@ package fr.afcepf.atod19.ecommerce.jungle.dao.implementation;
 import java.util.List;
 
 import javax.persistence.Query;
+import javax.persistence.TypedQuery;
 
 import org.springframework.stereotype.Component;
 
@@ -40,14 +41,14 @@ public class DaoLivreImpl extends GenericDaoImpl implements IDaoLivre {
 	
 	@Override
 	public List<Livre> rechercheLivreSelonTitre(String titre) {
-		Query query = getEntityManager().createQuery("From Livre as l where l.titre =:nc", Livre.class);
-		query.setParameter(1, titre);
+		TypedQuery<Livre> query = getEntityManager().createQuery("From Livre as l where l.titre = :nc", Livre.class);
+		query.setParameter("nc", titre);
 		return query.getResultList();
 	}
 
 	@Override
 	public List<Livre> getAllLivre() {
-		Query query = getEntityManager().createQuery("From Livre ", Livre.class);
+		TypedQuery<Livre> query = getEntityManager().createQuery("From Livre ", Livre.class);
 		return query.getResultList();
 	}
 
