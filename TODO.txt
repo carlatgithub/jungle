@@ -5,5 +5,6 @@ This is the list of tasks that are still outstanding:
   + Make filter by categories work
   + Implement add to basket
   + Link to new user page (newAccount.xhtml)
+  + Change name on front page from "Hello World" to "Jungle" for example
   + Documentation + slides for presentation tuesday 14:00
-   
+ 
