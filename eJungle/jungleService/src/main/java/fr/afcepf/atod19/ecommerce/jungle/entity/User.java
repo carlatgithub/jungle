@@ -13,6 +13,7 @@ import javax.persistence.Table;
 @Inheritance(strategy=InheritanceType.JOINED )
 public class User implements Serializable {
 	
+	
 	private static final long serialVersionUID = 1L;
 	@Id
 	private String username;
@@ -30,8 +31,5 @@ public class User implements Serializable {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
-	
-	
 	
 }

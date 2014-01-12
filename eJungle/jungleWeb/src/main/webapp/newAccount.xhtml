@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+
+<ui:composition template="/templates/common.xhtml">
+	<ui:define name="pageTitle">Title</ui:define>
+	<ui:define name="pageHeader">Header</ui:define>
+	<ui:define name="body">
+		<form jsfc="h:form" id="Form">
+
+			<p:panel id="panel" header="Nouveau client"
+				style="margin-bottom:10px;">
+				
+				<h:panelGrid columns="2">
+					<h:outputLabel for="nom" value="Nom:" />
+					<p:inputText id="nom" required="true" />
+
+					<h:outputLabel for="prenom" value="Prenom:" />
+					<p:inputText id="prenom" required="true" />
+
+					<h:outputLabel for="username" value="Username:" />
+					<p:inputText id="username" required="true" />
+
+ 					<h:outputLabel for="password" value="Password:" />
+					<p:inputText id="password" required="true" />
+
+					<h:outputLabel for="email" value="Email:" />
+					<p:inputText id="email" required="true" />
+					
+					<h:outputLabel for="telephone" value="Telephone:" />
+					<p:inputText id="telephone" required="true" />
+
+					<h:outputLabel for="rue" value="Rue:" />
+					<p:inputText id="rue" required="true" />
+		
+					<h:outputLabel for="numeroDeRue" value="Numero De Rue:" />
+					<p:inputText id="numeroDeRue" required="true" />										
+					
+
+					<h:outputLabel for="codePostal" value="Code Postal:" />
+					<p:inputText id="codePostal" required="true" />										
+					
+					<h:outputLabel  for="ville" value="Ville :" />  
+					<p:autoComplete id="ville" value="#{commande.ville}"   
+                    completeMethod="#{commande.complete}"/>  									
+					
+					<h:commandButton action="#{commande.inc}" value="Créer" />
+				</h:panelGrid>
+
+			</p:panel>
+		</form>
+	</ui:define>
+</ui:composition>
+
+</html>

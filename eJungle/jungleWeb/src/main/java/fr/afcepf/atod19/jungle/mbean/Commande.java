@@ -11,6 +11,8 @@ public class Commande {
 	List<Integer> quantities;
 	int quantity;
 	int total = 0;
+	List<String> villes;
+	String ville;
 	
 	public Commande() {
 		quantities = new ArrayList<Integer>();
@@ -19,6 +21,27 @@ public class Commande {
 		quantities.add(new Integer(3));
 		quantities.add(new Integer(4));
 		quantities.add(new Integer(5));
+	
+		villes = new ArrayList<String>();
+		villes.add("paris");
+		villes.add("marseille");
+		villes.add("lyon");
+		villes.add("toulouse");
+		villes.add("nice");
+		villes.add("nantes");
+		villes.add("strasbourg");
+		villes.add("montpellier");
+		villes.add("bordeaux");
+		villes.add("lilles");
+		villes.add("rennes");
+		villes.add("reims");
+		villes.add("le havre");
+		villes.add("saint etienne");
+		villes.add("toulon");
+		villes.add("grenoble");
+		villes.add("dijon");
+
+
 	}
 
 	public List<Integer> getQuantities() {
@@ -49,4 +72,27 @@ public class Commande {
 		total++;
 		System.out.println("incremented, new value total=" + total);
 	}
+	
+	public List<String> complete(String query) {
+		return villes;  
+	}
+
+	public List<String> getVilles() {
+		return villes;
+	}
+
+	public void setVilles(List<String> villes) {
+		this.villes = villes;
+	}
+
+	public String getVille() {
+		return ville;
+	}
+
+	public void setVille(String ville) {
+		this.ville = ville;
+	}
+	
+	
+	
 }

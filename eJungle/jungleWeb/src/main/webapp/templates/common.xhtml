@@ -23,22 +23,26 @@
 
 <p:layout fullPage="true">  
   
-    <p:layoutUnit position="north" size="100" header="Top" resizable="true" closable="true" collapsible="true">  
-        <h:outputText value="Recherche par titre: " /> 
-        <p:inputText />
-        <h:commandButton value="Rechercher"  />
-        
-        <a href="login2.jsf">sign in</a>
-        
-        <h:commandButton id="panier" value="Panier(#{commande.total})"  />
-        
-    </p:layoutUnit>  
+    <p:layoutUnit position="north" size="200" resizable="true" closable="true" collapsible="true">
+				<h:form>
+					<h:outputText value="Recherche par titre: " />
+					<p:inputText />
+					<h:commandButton value="Rechercher" />
+				</h:form>
+
+				<a href="login2.jsf">sign in</a>
+				
+				<h:form>
+					<h:commandButton id="panier" value="Panier(#{commande.total})" />
+				</h:form>
+				
+			</p:layoutUnit>  
   
-    <p:layoutUnit position="south" size="100" header="Bottom" resizable="true" closable="true" collapsible="true">  
+    <p:layoutUnit position="south" size="100" resizable="true" closable="true" collapsible="true">  
         <h:outputText value="South unit content." />  
     </p:layoutUnit>  
   
-    <p:layoutUnit position="west" size="200" header="Left" resizable="true" closable="true" collapsible="true">
+    <p:layoutUnit position="west" size="200"  resizable="true" closable="true" collapsible="true">
             <h:outputText value="sidebar left" /> 
 
     </p:layoutUnit>  
