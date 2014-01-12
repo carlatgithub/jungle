@@ -24,11 +24,13 @@
 <p:layout fullPage="true">  
   
     <p:layoutUnit position="north" size="100" header="Top" resizable="true" closable="true" collapsible="true">  
-        <h:outputText value="Recherche par mot clef" /> 
+        <h:outputText value="Recherche par titre: " /> 
         <p:inputText />
         <h:commandButton value="Rechercher"  />
         
-        <h:commandButton value="sign in"  />      
+        <a href="login2.jsf">sign in</a>
+        
+        <h:commandButton id="panier" value="Panier(#{commande.total})"  />
         
     </p:layoutUnit>  
   
@@ -37,13 +39,12 @@
     </p:layoutUnit>  
   
     <p:layoutUnit position="west" size="200" header="Left" resizable="true" closable="true" collapsible="true">
-            <h:outputText value="sidebqr left" /> 
+            <h:outputText value="sidebar left" /> 
 
     </p:layoutUnit>  
     
     <p:layoutUnit position="center">  
  
-            This fullPage layout consists of five different layoutUnits which are resizable and closable by default.  
  			 <ui:insert name="body">the template body</ui:insert>
 		
     </p:layoutUnit>  

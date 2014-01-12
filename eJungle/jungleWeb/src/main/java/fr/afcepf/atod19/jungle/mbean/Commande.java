@@ -10,6 +10,7 @@ public class Commande {
 	
 	List<Integer> quantities;
 	int quantity;
+	int total = 0;
 	
 	public Commande() {
 		quantities = new ArrayList<Integer>();
@@ -36,5 +37,16 @@ public class Commande {
 		this.quantity = quantity;
 	}
 
-	
+	public int getTotal() {
+		return total;
+	}
+
+	public void setTotal(int total) {
+		this.total = total;
+	}
+
+	public void inc() {
+		total++;
+		System.out.println("incremented, new value total=" + total);
+	}
 }

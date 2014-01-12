@@ -31,34 +31,19 @@
                 <f:selectItems value="#{commande.quantities}" />  
             </h:selectOneMenu>
             
-                <p:commandLink update=":form:carDetail" oncomplete="carDialog.show()" title="View Detail">  
-                    <h:outputText styleClass="ui-icon ui-icon-search" style="margin:0 auto;" />   
-                    <f:setPropertyActionListener value="#{livre}"   
-                            target="#{gridBean.selectedLivre}" />  
-                </p:commandLink>  
+<!--                 <p:commandLink update=":form:carDetail" oncomplete="carDialog.show()" title="View Detail">   -->
+<!--                     <h:outputText styleClass="ui-icon ui-icon-search" style="margin:0 auto;" />    -->
+<!--                     <f:setPropertyActionListener value="#{livre}" -->
+<!--                             target="#{gridBean.selectedLivre}" />   -->
+<!--                 </p:commandLink>   -->
+	<p:commandButton   id="withIcon"  value="Ajouter au panier" icon="ui-icon-plusthick" title="Icon Only" 
+		action="#{commande.inc}" 
+		/>  
             </h:panelGrid>  
         </p:panel>  
   
     </p:dataGrid>  
-      
-    <p:dialog header="Livre Detail" widgetVar="carDialog" modal="true">  
-        <p:outputPanel id="carDetail" style="text-align:center;">  
-          
-            <p:graphicImage value="/images/livre/#{gridBean.selectedLivre.titre}.jpg"/>  
-              
-            <h:panelGrid  columns="2" cellpadding="5">  
-                <h:outputLabel for="modelNo" value="Model No: " />  
-                <h:outputText id="modelNo" value="#{gridBean.selectedLivre.numeroISBN}" />  
-                  
-                <h:outputLabel for="year" value="Year: " />  
-                <h:outputText id="year" value="#{gridBean.selectedLivre.datePublication}" />  
-                  
-                <h:outputLabel for="color" value="Color: " />  
-                <h:outputText id="color" value="#{gridBean.selectedLivre.titre}"/>  
-            </h:panelGrid>  
-        </p:outputPanel>  
-    </p:dialog>  
-  
+
 </h:form>  
 
 
