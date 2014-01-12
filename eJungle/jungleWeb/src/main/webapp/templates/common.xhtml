@@ -26,12 +26,12 @@
     <p:layoutUnit position="north" size="200" resizable="true" closable="true" collapsible="true">
 				<h:form>
 					<h:outputText value="Recherche par titre: " />
-					<p:inputText />
-					<h:commandButton value="Rechercher" />
+					<p:inputText value="#{rechercheBean.pattern}"/>
+					<h:commandButton value="Rechercher" action="#{rechercheBean.search}" />
 				</h:form>
 
 				<a href="login2.jsf">sign in</a>
-				
+					
 				<h:form>
 					<h:commandButton id="panier" value="Panier(#{commande.total})" />
 				</h:form>
