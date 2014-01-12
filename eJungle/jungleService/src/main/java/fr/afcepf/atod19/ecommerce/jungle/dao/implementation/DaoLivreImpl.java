@@ -37,6 +37,13 @@ public class DaoLivreImpl extends GenericDaoImpl implements IDaoLivre {
 		Livre unLivre = getEntityManager().find(Livre.class, numeroISBN);
 		return unLivre;
 	}
+	
+	@Override
+	public List<Livre> rechercheLivreSelonTitre(String titre) {
+		Query query = getEntityManager().createQuery("From Livre as l where l.titre =:nc", Livre.class);
+		query.setParameter(1, titre);
+		return query.getResultList();
+	}
 
 	@Override
 	public List<Livre> getAllLivre() {

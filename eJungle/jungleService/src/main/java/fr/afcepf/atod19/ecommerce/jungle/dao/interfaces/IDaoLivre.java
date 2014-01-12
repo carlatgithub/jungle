@@ -12,5 +12,6 @@ public interface IDaoLivre extends IGenericDao {
 	Livre getLivreByKey(String numeroISBN); 
 	List<Livre> getAllLivre();
 	void creerLivre(Livre unLivre);
+	List<Livre> rechercheLivreSelonTitre(String titre);
 
 }
