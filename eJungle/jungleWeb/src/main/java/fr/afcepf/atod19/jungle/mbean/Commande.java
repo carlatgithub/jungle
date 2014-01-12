@@ -5,6 +5,11 @@ import java.util.List;
 
 import javax.faces.bean.ManagedBean;
 
+
+//
+//
+//	THIS IS TEST CODE THAT MUST BE REMOVED !!!!!!!
+//
 @ManagedBean
 public class Commande {
 	
