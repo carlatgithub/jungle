@@ -1,0 +1,9 @@
+This is the list of tasks that are still outstanding:
+
+  + Display results of search
+  + Add a detailled view page
+  + Make filter by categories work
+  + Implement add to basket
+  + Link to new user page (newAccount.xhtml)
+  + Documentation + slides for presentation tuesday 14:00
+   
